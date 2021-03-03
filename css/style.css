@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 15pt 'Oswald', sans-serif;
+}
+
+#header {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 15pt;
+}
+
+.dark-mode {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10pt;
+}
+
+.toogle {
+    width: 30px;
+    height: 15px;
+    background-color: gray;
+    border-radius: 30px;
+    padding: 1px;
+    box-sizing: content-box;
+}
+
+.toogle > .circle {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.toogle.active {
+    background-color: #000;
+}
+
+.toogle.active > .circle {
+    margin-left: 15px;
+}
+
+#section {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    padding: 10px;
+}
+
+#available-banknotes {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+#available-banknotes li {
+    padding: 10px;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    width: 100px;
+    margin: 10px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(210, 210, 210);
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+#withdraw-window {
+    width: 100%;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+
+input[type=submit] {
+    border: none;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(210, 210, 210);
+    transition: all 0.3s;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+#deposit-window {
+    width: 100%;
+    display: none;
+    justify-content: center;
+}
